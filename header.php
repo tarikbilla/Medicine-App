@@ -32,7 +32,7 @@
                         <a class="nav-link" href="add-medicine.php">Add Medicine</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Report</a>
+                        <a class="nav-link" href="sales-medicine.php">Sales</a>
                     </li>
                     <!-- Add more menu items as needed -->
                 </ul>

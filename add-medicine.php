@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $medicine_status = $_POST["medicine_status"];
 
     // Insert data into the medicines table
-    $sql = "INSERT INTO medicines (medicine_name, medicine_added_datetime, medicine_description, price, medicine_status)
-            VALUES ('$medicine_name', '$medicine_added_datetime', '$medicine_description', '$price', '$medicine_status')";
+    $sql = "INSERT INTO medicines (medicine_name, medicine_description, price, medicine_status)
+            VALUES ('$medicine_name', '$medicine_description', '$price', '$medicine_status')";
 
     if ($conn->query($sql) === TRUE) {
         $success = "Medicine added successfully";
@@ -19,12 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Close the database connection
-$conn->close();
 ?>
-<div class="container">
-
-    <div class="container mt-5">
+<div class="container mt-5">
     <h2>Add Medicine</h2>
     <?php if(isset($success)){?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -68,6 +64,5 @@ $conn->close();
 </div>
 
   
-</div>
 <?php include 'footer.php';?>
 

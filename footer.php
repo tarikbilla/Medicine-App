@@ -12,6 +12,10 @@
             $('#medicineTable').DataTable({
                 // Your DataTable customization options go here
             });
+
+            $('#salesTable').DataTable({
+            // Your DataTable customization options go here
+        });
         });
     </script>
 
